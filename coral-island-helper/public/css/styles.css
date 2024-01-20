@@ -1,0 +1,596 @@
+@import url('https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400;1,500;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+
+:root {
+    --light-blue: #E6F3FA; 
+}
+
+body {
+    background-color: rgb(213, 241, 251);
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; 
+}
+
+h1, 
+h2, 
+h3,
+h4, 
+h5 {
+    font-weight: 400; 
+}
+
+h1 {
+    font-family: 'Gloria Hallelujah', cursive;
+}
+
+.frontpage {
+    display: flex;
+    align-items: end;
+    justify-content: space-around;
+}
+
+.frontpage img {
+    width: 200px;
+    height: 600px;
+    object-fit: contain;
+}
+
+
+.frontpage .content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frontpage .content img {
+    width: 20vw;
+    height: 35vh;
+}
+
+.frontpage h1 {
+    color: black;
+    font-size: 50px;
+    margin: 0 0 30px 0;
+}
+
+.frontpage .frontpage-nav {
+    display: flex;
+    margin-bottom: 50px;
+    gap: 20px;
+}
+
+.frontpage a {
+    background-color: white; 
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 1s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.frontpage a:hover {
+    background-color: rgb(234, 248, 253); 
+}
+
+.frontpage .animals {
+    display: flex;
+}
+
+.frontpage .animals img {
+    width: 20%;
+    height: 20%;
+    object-fit: contain;
+}
+
+.back-to-frontpage {
+    display: flex; 
+    background-color: rgb(241, 251, 255);
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin: 50px 0 0 50px; 
+    transition: 1s;
+}
+
+.back-to-frontpage:hover {
+    background-color: white;
+}
+
+.back-to-frontpage a {
+    text-decoration: none;
+    color: black;
+}
+
+
+.offerings h1, .museum h1, .characters h1, .recipes h1 {
+    text-align: center;
+    font-size: 60px;
+    margin-top: 0;
+}
+
+.nav {
+    width: 100%; 
+    display: flex; 
+    justify-content: space-evenly;
+}
+
+.nav-btn {
+    background-color: white; 
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    width: 15%; 
+    padding: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 1s;
+    /* border: 2px solid white; */
+}
+
+.nav-btn:hover {
+    background-color: rgb(234, 248, 253); 
+}
+
+
+.nav-btn.active {
+    background-color: rgb(234, 248, 253); 
+}
+
+.offerings .altar {
+    display: none;
+}
+
+.offerings .altar-reward {
+    text-align: center;
+    margin: 50px 0 80px;
+}
+
+.offerings .altar:first-of-type {
+    display: block;
+}
+
+.offerings .altar-categories {
+    display: flex; 
+    justify-content: space-around;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.offerings .altar-category {
+    flex-basis: calc(33% - 50px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.offerings .category-reward {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.offerings .category-reward img {
+    height: 50px;
+}
+
+.offerings .category-icon {
+    width: 100px;
+}
+
+.offerings .items {
+    width: 100%; 
+    margin-bottom: 75px; 
+}
+
+.offerings .items div.item:nth-child(odd) {
+    background-color: var(--light-blue); 
+}
+
+.offerings h5 {
+    margin: 10px 0 0; 
+    font-size: 16px;
+}
+
+.offerings .item {
+    display: flex;
+    padding: 5px 15px;
+    gap: 10px;
+}
+
+.offerings div.item-icons {
+    position: relative;
+}
+
+.offerings .item .item-icon {
+    height: 60px; 
+}
+
+.offerings .item .item-quality-icon {
+    position: absolute; 
+    height: 25px; 
+}
+
+.offerings input[type='checkbox'] {
+    width: 30px; 
+    height: 30px; 
+    background-color: white;
+    margin-top: 15px;
+}   
+
+.offerings .img-title {
+    display: flex;
+    gap: 10px;
+}
+
+.offerings .how-to-find {
+    font-size: 13px;
+}
+
+.offerings .how-to-find div {
+    display: flex;
+    gap: 5px;
+    justify-content: space-between;
+}
+
+.offerings .how-to-find div p {
+    margin: 0;
+}
+
+.offerings .how-to-find div p:first-of-type {
+    font-weight: 600;
+}
+
+.offerings .item-text {
+    width: 100%; 
+}
+
+.museum .donations {
+    display: none;
+}
+
+.museum .donations:first-of-type {
+    display: flex;
+}
+
+.museum .donations {
+    flex-wrap: wrap;
+    margin: 30px 0;
+}
+
+.museum .donations .donation-item {
+    flex-basis: 11%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.museum .donations .donation-item h5 {
+    margin: 5px 0 0 0;
+}
+
+.museum .donations .donation-item:nth-child(2n) {
+    background-color: var(--light-blue)
+}
+
+.museum input[type='checkbox'] {
+    width: 30px; 
+    height: 30px; 
+    background-color: white;
+    margin-top: 15px;
+}   
+
+.characters .noResults, .recipes .noResults {
+    margin: 25px 50px;
+}
+
+.characters .noResults p, .recipes .noResults p {
+    font-size: 28px;
+}
+
+.characters .noResults .images {
+    display: flex;
+}
+
+.characters .noResults .images img {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.characters .header, .recipes .header {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.characters .header input, .recipes .header input {
+    padding: 10px 15px;
+    font-size: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 300; 
+    width: 92%;
+    border: 1px solid lightblue;
+    border-radius: 5px;
+}
+
+.characters .character {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 25px 50px;
+}
+
+.characters .character:nth-child(even) {
+    background-color: var(--light-blue);
+}
+
+.characters .character .info {
+    flex-basis: calc(35% - 50px);
+}
+
+.characters .character .info .name {
+    font-size: 30px;
+}
+
+.characters .character .info img {
+    width: 75%;
+}
+
+.characters .character p.birthday {
+    margin-top: 0;
+}
+
+.characters .character .preferences {
+    flex-basis: calc(65% - 50px);
+    margin-top: 50px;
+}
+
+.characters .character .preferences h3 {
+    font-size: 22px;
+}
+
+.characters .preference .title, .characters .info .birthdayTitle {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.characters .preference .title img, .characters .info .birthdayTitle img {
+    height: 30px;
+    width: 30px;
+}
+
+.characters .preference-items {
+    display: flex;
+    align-items: flex-end;
+    flex-wrap: wrap;
+}
+
+.characters .preference-items .single {
+    flex-basis: calc(12vw - 50px);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+
+.characters .preference-items .single img {
+    width: 50px;
+}
+
+.characters .preference-items .single p {
+    font-size: 13px;
+}
+
+.characters .preference-items .category {
+    flex-basis: 100%;
+}
+
+.recipes .header {
+    padding: 0 50px;
+}
+
+.recipes .actions {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+}
+
+.recipes .actions input {
+    width: 50%;
+}
+
+.recipes .actions button {
+    width: 50%;
+    background-color: white; 
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	cursor: pointer;
+	outline: inherit;
+    padding: 20px;
+    font-weight: 400;
+    font-size: 20px;
+    border-radius: 5px;
+    transition: 1s;
+}
+
+.recipes .actions button:hover {
+    background-color: rgb(234, 248, 253); 
+}
+
+.recipes .recipe {
+    padding: 20px 50px 50px;
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+hr {
+    border: 1px solid lightblue;
+}
+
+.recipe:nth-child(even) {
+    background-color: var(--light-blue);
+}
+
+.recipes .recipe .info {
+    flex-basis: calc(40% - 25px);
+}
+
+.recipes .recipe .info .quality-recipe {
+    display: flex;
+    gap: 10px;
+}
+
+.recipes .recipe .info .normal-quality img {
+    height: 50px;
+}
+
+.recipes .recipe .info .quality-price {
+    display: flex;
+    gap: 5px;
+}
+
+.recipes .recipe .info .quality-price img {
+    width: 25px;
+    object-fit: contain;
+}
+
+.recipes .recipe .info .quality-img {
+    position: relative;
+}
+
+.recipes .recipe .info .quality-img img {
+    height: 50px;
+}
+
+.recipes .recipe .info .quality-img .quality { 
+    position: absolute;
+    height: 25px;
+    left: 0;
+    top: 0;
+}
+
+.recipes .recipe .howTo {
+    flex-basis: calc(60% - 25px);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.recipes .recipe .howTo h3 {
+    flex-basis: 100%;
+    font-size: 20px;
+}
+
+.recipes .recipe .howTo .utensils {
+    flex-basis: 40%;
+}
+
+.recipes .recipe .howTo .utensils .utensil {
+    display: flex;
+    gap: 10px;
+}
+
+.recipes .recipe .howTo .ingredients {
+    flex-basis: 60%;
+}
+
+.recipes .recipe .howTo .ingredient {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: flex-end;
+    gap: 10px;
+}
+
+.recipes .recipe .howTo .utensil img, .recipes .recipe .howTo .ingredient img {
+    width: 45px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.recipes .recipe .howTo .eitherOrIngredient {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.recipes .recipe .howTo .eitherOrIngredient img {
+    width: 45px;
+    height: 100%;
+    object-fit: contain;
+}
+
+.recipes .recipe h2 {
+    font-size: 28px;
+}
+
+.recipes h4.accordion {
+    background-color: white; 
+    color: inherit;
+    border: none;
+    padding: 0 20px;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+    border-radius: 5px;
+    transition: background-color 0.5s;
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.recipes h4.accordion.show {
+    background-color: rgb(234, 248, 253); 
+}
+
+.recipes h4.accordion:hover {
+    background-color: rgb(234, 248, 253); 
+}
+
+.recipes h4.accordion span.arrow {
+    font-size: 35px;
+    transform: rotate(-90deg);
+    transition: transform 0.5s ease;
+}
+
+.recipes h4.accordion span.arrow.show {
+    transform: rotate(90deg);
+}
+
+.sellPrices {
+    max-height: 0;
+    overflow: hidden;
+    padding: 0 20px;
+    border-radius: 0 0 5px 5px;
+    transition: max-height 0.5s ease-out, padding 0.2s;
+    margin: 0;
+    background-color: rgb(234, 248, 253);
+}
+
+.sellPrices.show {
+    max-height: 500px; /* Adjust the max height as needed */
+    padding: 20px;
+    border-top: none;
+}
