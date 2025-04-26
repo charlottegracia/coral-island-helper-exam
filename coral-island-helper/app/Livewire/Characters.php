@@ -14,6 +14,8 @@ class Characters extends Component
     public function mount() {
         $this->npcs = json_decode(file_get_contents(storage_path() . "/data/npcs.json"), true);
     
+        $this->updateMeilisearchIndex();
+
         // Viser alle characters når siden er mounted
         $this->search();
     }

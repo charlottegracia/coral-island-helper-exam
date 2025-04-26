@@ -12,6 +12,9 @@ class Recipes extends Component {
     public $randomRecipe;
 
     public function mount() {
+
+        $this->updateMeilisearchIndex();
+
         // Viser 50 opskrifter når siden er mounted
         $this->search();
     }
